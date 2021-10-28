@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="moviemng.css">
+    <script defer src="moviemng.js"></script>
+    <link rel="stylesheet" href="../uxfactory/bootstrap-5.0.2-dist/css/bootstrap.css">
+    <script src="../uxfactory/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, intial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script defer src="https://kit.fontawesome.com/9f767eca8f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="container__header">
+            <div class="container__title">
+                <h1>MOVIE<span style="color: red;">5<i class="far fa-star"></i></span></name>
+                </h1>
+
+            </div>
+        </div>
+        <div class="container__movie-system">
+            <nav>
+                <h1>ADD MOVIE RATING</h1>
+               <!-- <li data-nav-list ><a href="https://www.hotstar.com/in/movies">Allmovies</a></li>
+                <li data-nav-list><a href="https://movieweb.com/movies/2021/action/">Home</a></li>
+                <li data-nav-list><a href="../project1/contact.html">Contact</a></li>
+                <li data-nav-list><a href="../project1/about.html">About</a></li>
+                 <li data-nav-list>Horror</li>
+                <li data-nav-list>Romance</li>-->
+            </nav>
+            <div class="movie-system__movie-list">
+                <button class="movie-list__add-movie">
+                    <i class="fas fa-video"></i> Add movie
+                </button>
+                <div class="movie-list__empty-item">
+                    <i class="fas fa-plus fa-7x"></i><br><br>
+                    Click the 'Add Movie' button to enter an entry
+                </div>
+                <footer>
+                    <div class="main-content">
+                        <div class="left box">
+                            <h2>About us</h2>
+                            <div class="content">
+                                <p>In this movie management the user has the ability add movie and 
+                                    make a list of movies with details such as moviename,putrating
+                                    even write a brief description about movie
+                                </p>
+                                <div class="socialmedia icons">
+                                    <a href="#"><span class="fab fa-facebook-f"></span></a>
+                                    <a href="#"><span class="fab fa-twitter"></span></a>
+                                    <a href="#"><span class="fab fa-instagram"></span></a>
+                                    <a href="#"><span class="fab fa-youtube"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="center box">
+                            <h2>Address</h2>
+                            <div class="content">
+                                <div class="place">
+                                    <span class="fas fa-map-marker-alt"></span>
+                                    <span class="text">Rajahmundry,andhrapradesh</span>
+                                </div>
+                                <div class="phone">
+                                    <span class="fas fa-phone-alt"></span>
+                                    <span class="text">7075754923</span>
+                                </div>
+                                <div class="email">
+                                    <span class="fas fa-envelope"></span>
+                                    <span class="text">sairamy3h6@gmail.com</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right box">
+                            <h2>Contact us</h2>
+                            <form action="#">
+                                <div class="email">
+                                    <div class="text">Email *</div>
+                                    <input type="email" required>
+                                </div>
+                                <div class="msg">
+                                    <div class="text">Message *</div>
+                                    <textarea name="name" rows="2" cols="10"></textarea>
+                                </div>
+                                <div class="btn">
+                                    <button type="submit" style="color: red;background-color:black;">Send</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+          
+            <div class="movie__modal-box">
+                <div class="movie__modal-content">
+                   <div class="movie__modal-header">
+                        Enter movie details
+                        <div class="close">&times</div>
+                    </div>
+                    <div class="movie__add-movie">
+                        <div class="add-movie__genre-image"></div>
+                        <div class="add-movie__input-form">
+                            <label for="movie-name">Enter name</label><br>
+                            <input name="name" type="text" id="movie-name" placeholder="Name of movie" required><br>
+
+                            <label for="movie-genre">Choose genre</label><br>
+                            <select name="genre" id="movie-genre">
+                                <option value="None">--Select a genre--</option>
+                                <option value="Action">Action</option>
+                                <option value="Comedy">Comedy</option>
+                                <option value="Drama">Drama</option>
+                                <option value="Horror">Horror</option>
+                                <option value="Romance">Romance</option>
+                            </select><br>
+
+                            <label for="movie-rating">Enter rating</label><br>
+                            <select name="rating" id="movie-rating">
+                                <option value="None">--Choose rating--</option>
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select><br>
+
+                            <label for="movie-description">Enter description</label><br>
+                            <textarea name="description" id="movie-description"
+                                placeholder="Description or summary of the movie"></textarea><br>
+
+                            <input type="submit" id="add-movie" value="Add movie">
+
+                        </div>
+                    </div>
+               </div>
+            </div>
+        </div>
+   </div>
+
+</body>
+
+</html>
